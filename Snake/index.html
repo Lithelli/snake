@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <h1>JSSS Snakee</h1>
+    </div>
+    <div id="startGame"> <button>Press To Play</button> <br> 
+        <img src="imgs/wasd.png">
+    </div>
+
+    <div id="highScore">Highscore<br>0</div>
+
+    <div id="score">SCORE<br>0</div>
+
+    <div id="gameOver">
+            Game Over
+        <form id="form" method="POST" action="/scores">
+            <input id="name" type="text" name="userName"><br>
+            <input id="scoreInput" type="hidden">
+            <input id="button" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <canvas id="canvas" width="600" height="600" style="border: 5px #5078b7 solid"></canvas>
+    
+    <script src="app.js"></script>
+</body>
+</html>
